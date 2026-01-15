@@ -1,0 +1,19 @@
+trigger:
+  branches:
+    include:
+      - main
+  paths:
+    include:
+      - recipients.txt
+pool:
+  name: event-agent-pool    # your self-hosted agent pool
+steps:
+  - checkout: self
+  - script: |
+      echo "Working directory: $(System.DefaultWorkingDirectory)"
+      ls -la
+      echo "🚀 Running bulk mailer..."
+      python3 $(System.DefaultWorkingDirectory)/bulk_mailer.py \
+        $(System.DefaultWorkingDirectory)/recipients.txt \
+        $(System.DefaultWorkingDirectory)/Niran_Dev.pdf
+    displayName: "Run Bulk Mailer Script"
