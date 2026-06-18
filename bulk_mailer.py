@@ -14,36 +14,17 @@ SMTP_PASS    = "kqlp ibua ckrf dipj"
 
 FROM_NAME  = "Niran Prem"
 FROM_EMAIL = SMTP_USER
-SUBJECT    = "Application for DevOps / Cloud Engineer Role - Niran Prem | 5 Yrs | AWS, Azure, GCP, Kubernetes | Immediate Joiner"
+SUBJECT    = "Application for DevOps / Cloud Engineer Role - Niran Prem | 5 Yrs | Immediate Joiner - 15 Days"
 
-BODY = """Dear Hiring Manager,
+BODY = """Hello Hiring Manager,
 
-I hope this message finds you well. I am writing to express my strong interest in a DevOps or Cloud Engineer opportunity within your organization. With 4.6 years of hands-on experience architecting, automating, and managing cloud-native infrastructure across AWS, Azure, and GCP, I bring both depth and breadth to modern DevOps practices.
+I hope this message finds you well. I am writing to express my strong interest in a DevOps or Cloud Engineer opportunity within your organization. With 4.8 years of hands-on experience architecting, automating, and managing cloud-native infrastructure across AWS, Azure, and GCP, I bring both depth and breadth to modern DevOps practices.
 
 Currently working as a Senior Technical Analyst at PIT Solutions Pvt. Ltd. (Kochi), and previously as a System Engineer at Infosys Limited (Bangalore), I have delivered enterprise-scale solutions in CI/CD automation, Kubernetes orchestration, and multi-cloud observability.
 
 
 KEY HIGHLIGHTS
 --------------
-
-CI/CD Pipelines
-Built and maintained enterprise pipelines using Azure DevOps, AWS CodePipeline, Jenkins, and GitHub Actions, reducing release cycle time by 45%.
-
-Infrastructure as Code
-Automated cloud provisioning with Terraform and Ansible across 15+ production environments, ensuring consistency and eliminating configuration drift.
-
-Kubernetes at Scale
-Managed EKS, AKS, GKE, and on-premises Hetzner Kubernetes clusters for microservices with zero-downtime rollouts and blue-green deployments.
-
-Observability Platform
-Architected a centralized monitoring stack using Grafana, Prometheus, Loki, Mimir, Tempo, and Pyroscope on Kubernetes, fully replacing legacy Zabbix infrastructure.
-
-Network Monitoring
-Deployed LibreNMS on Kubernetes for org-wide visibility into network devices, traffic, and infrastructure health.
-
-Security and Virtualization
-Hardened endpoints with Symantec SEP, managed VMware vSphere workloads, and configured enterprise networking including TCP/IP, DNS, VPN, and firewalls.
-
 Certifications
 AWS Certified Cloud Practitioner | Microsoft PL-300 | Microsoft MS-900 | AWS Solutions Architect Associate (In Progress)
 
