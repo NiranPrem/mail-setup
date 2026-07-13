@@ -14,7 +14,7 @@ SMTP_PASS    = "kqlp ibua ckrf dipj"
 
 FROM_NAME  = "Niran Prem"
 FROM_EMAIL = SMTP_USER
-SUBJECT    = "Application for DevOps / Cloud Engineer Role - Niran Prem | 5 Yrs | Immediate Joiner - 15 Days"
+SUBJECT    = "Application for DevOps / Cloud Engineer Role - Niran Prem | 5 Yrs | LWD July 17"
 
 BODY = """Hello Hiring Manager,
 
