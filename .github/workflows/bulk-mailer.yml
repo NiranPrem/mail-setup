@@ -1,0 +1,51 @@
+name: Bulk Email Sender
+
+on:
+  workflow_dispatch:
+
+jobs:
+  send-emails:
+    runs-on: ubuntu-latest
+
+    env:
+      SMTP_HOST: smtp.gmail.com
+      SMTP_PORT: 465
+      SMTP_USE_SSL: "true"
+      SMTP_USER: ${{ secrets.SMTP_USER }}
+      SMTP_PASS: ${{ secrets.SMTP_PASS }}
+      PYTHONUNBUFFERED: "1"
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify Files
+        run: |
+          echo "Listing workspace files:"
+          ls -lh
+
+          test -f bulk_mailer.py
+          test -f recipients.txt
+          test -f Niran_Dev.pdf
+
+          echo "All required files found."
+
+      - name: Send Emails
+        run: |
+          echo "Running bulk mailer..."
+          python bulk_mailer.py recipients.txt Niran_Dev.pdf
+
+      - name: Success Message
+        if: success()
+        run: |
+          echo "✅ Bulk email test completed successfully"
+
+      - name: Failure Message
+        if: failure()
+        run: |
+          echo "❌ Bulk email test failed"
